@@ -1,15 +1,57 @@
-{
-  "name": "herokuOnedrive",
-  "description": "Deploy herokuOnedrive to heroku",
-  "website": "https://github.com/qkqpttgf/herokuOnedrive",
-  "repository": "https://github.com/qkqpttgf/herokuOnedrive",
-  "success_url": "/",
-  "env": {
-    "admin": {
-       "description": "admin password to manage Onedrive files. 管理密码，不添加时不显示登录页面且无法登录。"
-     },
-    "APIKey": {
-       "description": "Get the API Key at https://dashboard.heroku.com/account (PageDown to find it). 在英文里的URL查找API Key，倒数第几栏。"
-     }
-  }
-}
+    public static $config = [
+        'name' => 'Home',
+        'multi' => 1,
+        'accounts' => [
+            [
+                'name' => 'Tamil Movies',
+                'provider' => 'MS',
+                'path' => '/Tamil',
+                'path_image' => [''],
+                'refresh_token' => 'OAQABAAAAAAAm-06blBE1TpVMil8KPQ411rmPVE4UkiAbiOX_7rxheY0g43kdn5gkXDNEC3qfmSN13Qmsbsq7pg4UvswuTUVMEs9iScRUSnGqcpMNFZJhbFYLs6-pGUpJysNlt_wVj4dRR7JaTOMqVG4u-XPhocbwbEHaidYWxizyz9UUC1IAkvbBCFKPnsa7045pyLx6g5kxF3RM-JldsqPG0yvX7XCONaH1bwZDkRI6veMkCXKOBvNhnGsCULQ1hetM-T3Wd2bMr5encGzCr9XSQuiv-HN9KeCvPzkbUcQ6HCeK6qJgZRau_Y-SqUU1-R5meYttwW5BgYxNQG2NGFm_MOkb00PQbRInCjqxvL4PRrGjM_1J67pFe4cgsJKs0fUmlNkWc4smF7xhnRHCQgowa3OpRkNDBm-O8vSpV-rDEgB7CzU1wMs-hSLjia1TSIQhK10Hv7_F7NZY1imtbDJpLbsrDk9b0SVcsu-YUrOfIf9bUTfe92ikp0V0OMrV6Rslgmhv5YBAbpb03w7RPhdXF-qoGNOzixE3lbqfZU3EanLEwBYPgHGf9MQXoZkYtMzfiCE3YMjsw3U49uF4C_TZQ_6x1BMX1vyVANQJeHzv8hwg5vbAR6AbNeRGdLcP5rsxdzOWM8GM-LdyBsUX4UgPFYWfy_1EeJ_2J79BKpBPv1Ea0vxSd7AI8PBsr4y3yz60raeqVfegYm1BDT3CWpOtM_h6BlP6SVcK3N_kuLrjJph1zxJDCt2d1R63NM8p5L9fUvwsucbmrVl69efRQSll-w0SZx9nImvlSrY0okbMMHDpUIoVOQBxA2vKPuEKTuICwHQTLlYy_sp-aDryPaPCDMx7eWhWnME_C_CUyaPKHBbAmaFXnqVCW9p_m-vqQEHEv0qypGsgAA'
+            ]
+        ],
+            [
+                'name' => 'English Movies',
+                'provider' => 'MS',
+                'path' => '/English',
+                'path_image' => [''],
+                'refresh_token' => 'OAQABAAAAAAAm-06blBE1TpVMil8KPQ41fkM-fAnXFyTpv31t6j9anvPu4lg25b9F75JxfPBlAECWrd10tlB1NHPnUzbmJH5zXu22b0Yr1qmQ9mvzyYJOW_syfSVpt0AujVzoMYtD0jnavb7EtEy454euuFMbUwaDRn-dK7nBOK02dKUOg7quqYeF1VG77omGW5o6djJcHF0uN3t-foC11D1ogmPD431HyK-fPC7QW8To8PLc8BUD1qm2TzkFClhj1Nrv2VvQNjqlchtH8Ee312FGWjRVWQ1ldxWZIRDAg0q8MmAF-TmLyJ1Wnt0-QsacWqJBv6UmzhnHGTWrQa_Cbi0LWPkye31ELjVU6L5IzknYM-Ac2XO56DK5xtDC-dXAdL9AhzvlgfAdHy8LrcADdsBtU2VMfjeWwedfX7yXkXWElBEx9iRMr0xl3VoFw4BL30t3HH2t1Zdym-J5r7kvEiyUEYw11cQuCe9KYb77_AdQPF3AhrEjEnHflMbObforqEJQ4TolQbRjkoLHU-Qa5l0HFO6tO_QRR809xpnJEdXmkVii57XDx2WjpDzjJK4NySSI38bT0fbiuxo3D324F1d8DTXJRipc5NgV1G2n5RKQNT3qY137k-N87GoT94jwCNskX24bUZTopjKld8W-qZox_OCxIRLHA68okovrPI6RkxeCjxwaB7_VWvgyLvthplYaNR9zI9WQj8l00aMBXIIKm4taQv7_ytBxwf4Vv817Iy2V0SWyiu0yaXMVlNI1cxGpZZqSBYGAZqd3r-hC2FIb4uj6fhQSlRGkomvvPVe_2j1i69HsbKjZDh_iKCiXeLkvvt9kpUdPKBeiYpl1qgNErgiaIaw8OCn3A2jUbH0XnUUCOUIOpWkYztuY-VyYcTkC267_xuMgAA'
+            ]
+        ],
+            [
+                'name' => 'Telugu Movies',
+                'provider' => 'MS',
+                'path' => '/Telugu',
+                'path_image' => [''],
+                'refresh_token' => 'OAQABAAAAAAAm-06blBE1TpVMil8KPQ41Mr4j8eWjWoNKK5Q4np0S2Xh635Ac51m6rYTHLVDfK3EjWGgFxYcnKak6gufwXktzGiilHccWXbAY986VY5FM-Cm1BM59WCAE5ym4k6x7cNKC6bcqKI0RDKRBKBDPBIgRWxNK1RmlWgBK75fnwlcuc_DhS4kFwQzP0LRPKTE6c9xmkA6WXerHBqIJJBX-BHaJcoZ1kQiLH8qozW66EsOJaLtRUvUEDGBDqrvsBTLd5DAJQxH0DQKyP_hoqmIjaVwXgVcS1LcrF4SHjpv8AtZqp2EERhIRcN-vmyn8SST9pp-CuE1OBWezpSd0Mh_NoaCymwkVxIiZfNbq2fo87OuiLCZ2p70bejul2ob83UKN-xClVrtjg2Sn7yIbm5-pOw_ioLY38LygoafsJXuJuddk8UfL1ZwMqrAZNGmp1PSsGx9Plzdpi_G0Jq6AXt-Vixq7YqUxymboG95nGRdKc9X1rZUQW8Apuqt6UsQMmOXoUHNnE_-JH4xDs718ggkYfTL_Io6yXuwOjzYfEjJq5xNhUa1EHUDJQu703PH9yUPujbzqbfjsmbPeeXqQvkbL4jq_gUhs2jof8OPVwvEySXW4drb8pv6n5Z-Wssr7JYXDPcUHQF9tJ9WvjjpsbqVa5SIQdI4ME_EeR8xtwQPMTOL9Sa62GjXN6AT8VN0s7xUAZ0MIaZBfJCvtUl9Z0E7IrSRoEuGs07JfmXjdVymWQcKdv_e_8tN7m6q0LD74OjxbR13_rRWOY1_vviJcTaKHz-nZNpZlzZHKxubZwxohreTDKV-Nrcs40OUR1-xQu3d5NqS0oFXeGcOPQn7837UuKuiRZcxQMq6VKP1AVHtmYTeFgKSw505-bhAXYPZ-zkYEU04gAA'
+            ]
+        ],
+            [
+                'name' => 'Malayalam Movies',
+                'provider' => 'MS',
+                'path' => '/Malayalam',
+                'path_image' => [''],
+                'refresh_token' => 'OAQABAAAAAAAm-06blBE1TpVMil8KPQ41V7gWbB2OVODFVJ4XPIGCQHzAPCqRZuBZGdRrV10ucqp4ncpEq24Gj5XdOLhwyr3EMuyCkgU50EgCHd5JwFRTGBPZr9soTTZqvNMYbMkXwrRpwNPpf6YkwZjYbDHtxL9rcmD8aSYIEQ1makd6RYcX5Bm5wAnrVAXhbhb05vh9VOpIv-ni7bQjHS1PfVPk4qrpsDSMb6TVPAcY91Ng4OyqGdp46_oRPHIuKhvcXSLWzkDLqjN8M27S2VVF6lpsuDVOenPRP0k5ELr-TxA_pcR2I_vGQ41wdeEBspPzm7COnMB9GtmlrPAo0IhOIOFe26RZBkW7FQrHESoG35JUsCmKiCDt-B0SZQ7esTcqoO0Gtg08NEf0mH3rRRd_TXc82H_HGfbdUbxtqgzC16O1XZjvVPjPSW5RwJ0WTRm92xh0c4gyA6P7Itp-TFJgVAz45-qP1IGYHzJl7_iPzRpmTLLgdc1E9rtn2yAS4NjepAvs01dzi23QNt2RPkLKIF3g4c5SRYfBF8P43CRWE9NJ2jr7X1-wF_fEZPK06KR8mHvlKsRK3HzlqpbSD6_hmFordqYo9CUjX9giZgkXB1fkq6cE139tDmZdO0_Vv00XXiIO88nFTEGpWlHDCpOfDZp5dhPC2xU7dCEYm6gHSjQ11GX_DxWNeSrFk0U-dlu_hk14S7e9qXZa6zmr7K5CmpVsD08LaprkuSETv3RsAX56U-U3QCOpWZpjPCNXJF_px1f8k5kJOxBIZNofmmYPCfa7ZQf06giuoOW4MXuxDHFRY24IRm5lnCO1d1bcGL-XwiT4m5JGfr9eK7DLVWMuSfLNAeeFyVKLO4WlXXecrQJqvyocSNfBx8Dqagh2rdxJwjXB63EgAA'
+            ]
+        ],
+            [
+                'name' => 'Kannada Movies',
+                'provider' => 'MS',
+                'path' => '/Kannada',
+                'path_image' => [''],
+                'refresh_token' => 'OAQABAAAAAAAm-06blBE1TpVMil8KPQ41eDEcikf8bZVWdd6v1fb_A7DnE_R9rIt4ocUxdo7FvcxNTqSCz52MrsrXziuenLfyFz4p_kTx6U3I6Ou7hF9kA5kWW2M2zCcZsIPYwbqCy8ItpnECmiSymoJd01mrXaA5-QTfAFUT4qje2hKan0AF7dNhE1E46BvrlFUSRhY0Y-wnubcnx42LQ_sIXvfwi0FCWCtdFInESAUqdnSkb2wkW9X5-RoF_0teWEf4wFi0JSk1uTaWGUU-hYqWAywessNuLNhgWKyGwvx0h_5tIfcNo2YUsUCS9kxJFITwyBiSTVxtx6cKhp39PAin6CNQfhstVBsFQRBrE-wxHDUycro_P1SK9XBqsjKNLWzQ2RS4buJVbiBcPTMyjSD8oEWGHbpHuj9kzXFhfwmGp0z-oV80SKv1V1ty6W_0-7SHbuKh8WEGWODOvpXo1mTCa-kp4jfFbmGuZXu-RUeXKaYgrd3ewCsymlWRhtxVedtif3BqcxuXdq_0DF80EpgJfVJCAeA4gQPiSAqmDrze_peCxcdGhkpIc9ddib-tWMzhkY0Lt8yhspa0WA2uDRjY0726dTu0luOHi3UftEZNpgJ6_N8XTt4UP7Zmj6_f1yxdzWTpZj-JYsTuPHYK74wYcNwaM21pf58vXDhgHSzQo-dtqqvFbLBfXDHn-nCToMVbxbmlu2WFenVw4xmo4cciBXl-ue42194intYvYZu-UmzKTQAF8tKWlvGLWPvGf3FNLQahKIn_Wgbrha7tH0PV6sVgfDvcx7lf-AkbbNwB53hR-RS86H3ZgrKrQ8honrE9me0M40fkKxR1aIAqQS9UBbt05iPJydV4lRBvI2FLt53WBH2dmdKsjwuzOikmOKTNLvFMRPsgAA'
+            ]
+        ],
+            [
+                'name' => 'Punjabi Movies',
+                'provider' => 'MS',
+                'path' => '/Punjabi',
+                'path_image' => [''],
+                'refresh_token' => 'OAQABAAAAAAAm-06blBE1TpVMil8KPQ41e-MmaRAQk91b9bdCXvAqHh0ACcvMC8KeoowDvWApWSTaeWfptosRkHY9oG4xbpdWwyJvlSifmb3LGSUXVf85mKgyd0LeW5rXU1Fnr2JsjAk49KGnW2XzmxKr3-TdTx9wvrLDZUGL5M66pRO7Y8tId0vLFP9OIAawQOGFb4r6XAzKOzH-LrqIjgW1RZiuLSRDhJgBow5AdLoDmbVQrvrVAIw7Zb3lx00tE24wgEC4IUKjTRUv54C59-QY0EcNGBy4Bbq37NGddDKe0nG3JTyHYWwMZWcGjzqlbgHE4XnXZCYefrs4pmGnB4yGyxH9rBReqlrXmo1TlCk1lA_Iz-lta5WTcuOtPQBQ76J4oYU-WunMsrQTY16Q--PTIYBBQLzg3_PXd3EhE2YvyxFMWhdMs_o95vSkk4AC8CQzdrTAWlA4dj6-3v__Esvk51M-AhOFKSjorkPjfU9XaWvDacKWQgmQTiA06ae-Pdnd4OEVhGvylK_1GL8e19cD5ol2Ij-eFQJ4UJXRdtukp7hogfjjYtQOSAeZX-cMOU-XXUIgXEPl-RBqmQCtQWNMSLhewiAdOrTNFs6KqtP_bHr16IJwQCOJgtfjSqqp0Lqp-ODa4ksEIMGlsLO7OzpIbgP0GuhldVM2tiGCmNX4HK1FfrklSB7p7Ofl89_wnCvPBBHy21KplsG4c2cHUi1RN7Sqac8C75eTeI-pHF5eoFXBDbAUYeC6NDDL38nAliXiht65Kfh7YT4A7NTORHXy0B2tYf78-9nu7Am34UF_-wa_Vx4evpYm6JDxdaaXUtEsBCsgCi8fd9USg7PUHEZWWZQvG9BcwrFJ-NTbDes6zvDDmUva0SCwbbqLFTIDQGOuuwE_gFUgAA'
+            ]
+        ],
+        'debug' => false,
+        'proxy' => '',
+        'password_file' => '',
+        'admin_password' => '',
+    ];
